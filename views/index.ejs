@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw</title>
+</head>
+
+<body>
+    <h1>
+        預け日数管理
+    </h1>
+    <p>
+        店名と預け期限を入力することで、メダルの預け日数を確認できます。
+    </p>
+
+    <ul class="shop_list">
+        <%for (const shop of shops){%>
+            <li class="shop_name"><%= shop%></li>
+        <% } %>
+        
+        </ul>
+
+    店名
+    <input type="text" class="input-text" />
+
+    <button class="thirty">30日</button>
+    <button class="sixty">60日</button>
+    <button class="ninety">90日</button>
+    <button class="today">日付</button>
+    <script src="/static/index.js" defer></script>
+    
+</body>
+
+</html>
