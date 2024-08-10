@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     var plus30 = today.getDate()+30;
     var plus60 = today.getDate()+60;
     var plus90 = today.getDate()+90;
-    
+
     document.querySelector('.thirty').addEventListener('click', (event) => {
       var dt = new Date();
       dt.setDate(dt.getDate()+30);

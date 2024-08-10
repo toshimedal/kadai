@@ -44,7 +44,7 @@ async function main(){
           res.status(400).send('Bad Request');
           return;
         }
-        await db.collection('shop').insertOne({ name: name });
+        await db.collection('user').insertOne({ name: name });
         res.status(200).send('Created');
       });
 
